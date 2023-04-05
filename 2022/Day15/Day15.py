@@ -1,6 +1,8 @@
 import re
+import os
 
-file = open("/Users/briansmiley/Projects/Advent/Day15/readings.txt","r")
+cwd = os.getcwd()
+file = open(cwd + "/readings.txt","r")
 lines = file.readlines()
 data = [[int(num) for num in re.findall("\d+",line)] for line in lines]
 pairedData = [[[datum[0],datum[1]],[datum[2],datum[3]]] for datum in data]
