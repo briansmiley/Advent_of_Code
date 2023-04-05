@@ -3,7 +3,9 @@ import time
 
 print(sys.setrecursionlimit(2000))
 
-file = open("/Users/briansmiley/Projects/Advent/Day12/grid.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "grid.txt","r")
 rows = [line.strip() for line in file.readlines()]
 
 class Node:

@@ -1,4 +1,6 @@
-file = open("/Users/briansmiley/Projects/Advent/Day10/signal.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "signal.txt","r")
 lines = file.readlines()
 instructions = [line.split() for line in lines]
 

@@ -2,7 +2,9 @@ import ast
 from itertools import zip_longest
 from functools import cmp_to_key
 
-file = open("/Users/briansmiley/Projects/Advent/Day13/packets.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "packets.txt","r")
 lines = [line.strip() for line in file.readlines()]
 packets = []
 for i in range(len(lines)//3 + 1):

@@ -1,6 +1,8 @@
 import re
 
-file = open("/Users/briansmiley/Projects/Advent/Day5/crates.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "crates.txt","r")
 
 stacks = [list("TRDHQNPB"),list("VTJBGW"),list("QMVSDHRN"),list("CMNZP"),list("BZD"),list("ZWCV"),list("SLQVCNZG"),list("VNDMJGL"),list("GCZFMPT")]
 

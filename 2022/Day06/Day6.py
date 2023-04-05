@@ -1,4 +1,6 @@
-file = open("/Users/briansmiley/Projects/Advent/Day6/buffer.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "buffer.txt","r")
 buffer = file.readlines()[0]
 # buffer = "aabaabcdaaaaaaazxcvbnmasdfghjkl"
 chunk = buffer[:3]

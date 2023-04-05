@@ -1,4 +1,6 @@
-file = open("/Users/briansmiley/Projects/Day2/strategy.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "strategy.txt","r")
 
 rounds = file.readlines()
 splitrounds = []

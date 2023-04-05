@@ -1,6 +1,7 @@
+import os
 import re
-
-file = open("/Users/briansmiley/Projects/Advent/Day4/sections.txt","r")
+cwd = os.getcwd()
+file = open(cwd + "sections.txt","r")
 
 pairs = file.readlines()
 # PART 1  

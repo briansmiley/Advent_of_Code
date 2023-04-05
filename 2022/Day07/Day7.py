@@ -1,6 +1,8 @@
 import re
 
-file = open("/Users/briansmiley/Projects/Advent/Day7/terminal.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "terminal.txt","r")
 log = file.readlines()
 logTokenized = [line.split() for line in log]
 

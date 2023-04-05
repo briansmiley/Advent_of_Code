@@ -1,4 +1,6 @@
-file = open("/Users/briansmiley/Projects/Advent/Day3/packs.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "packs.txt","r")
 
 packs = file.readlines()
 

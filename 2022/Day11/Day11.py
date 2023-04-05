@@ -1,6 +1,8 @@
 import re
 import time
-file = open("/Users/briansmiley/Projects/Advent/Day11/monkeys.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "monkeys.txt","r")
 lines = file.readlines()
 
 monkeys = []

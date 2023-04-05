@@ -1,6 +1,8 @@
 import math
 
-file = open("/Users/briansmiley/Projects/Advent/Day8/forest.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "forest.txt","r")
 
 grid = [line.strip() for line in file.readlines()]
 #takes a tree's coordinates and returns whether it is visible from any direction

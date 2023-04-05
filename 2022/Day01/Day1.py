@@ -1,7 +1,7 @@
 import os
 
-os.getcwd()
-file = open("/Users/briansmiley/Projects/Day1/cals.txt", "r")
+cwd = os.getcwd()
+file = open(cwd + "/cals.txt", "r")
 lines = file.readlines()
 
 totals = []

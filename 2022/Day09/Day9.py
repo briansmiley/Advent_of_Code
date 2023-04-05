@@ -1,6 +1,8 @@
 import math 
 
-file = open("/Users/briansmiley/Projects/Advent/Day9/moves.txt","r")
+import os
+cwd = os.getcwd()
+file = open(cwd + "moves.txt","r")
 lines = file.readlines()
 moves = [line.split() for line in lines]
 moves = [[move[0], int(move[1])] for move in moves]
