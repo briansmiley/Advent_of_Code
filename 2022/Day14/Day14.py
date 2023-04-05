@@ -1,5 +1,9 @@
-file = open("/Users/briansmiley/Projects/Advent/Day14/cave.txt","r")
+import os
 import time
+
+cwd = os.getcwd()
+
+file = open(cwd + "/testcave.txt","r")
 lines = file.readlines()
 #get the coordinate pairs without arrows "1,2 -> 3,4" ---> "1,2","3,4"
 lines = [line.split(" -> ") for line in lines]
@@ -81,8 +85,8 @@ while sand[0] < len(cave) - 1:
         # print(sand)
         sand = fall(cave,sand)
 
-        # printCave(cave)
-        # time.sleep(.003)
+        printCave(cave)
+        time.sleep(.03)
 # print(xMin,xMax)
 printCave(cave)
 print(sum([row.count('o') for row in cave[:-1]]))
